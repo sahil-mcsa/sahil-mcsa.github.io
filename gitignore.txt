@@ -2,4 +2,3 @@
 # Ignore any specific configuration files
 config.yml
 
-
