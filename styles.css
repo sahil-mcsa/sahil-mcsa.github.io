@@ -1,0 +1,185 @@
+/* Example of refined styles based on provided code */
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #144444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #555555;
+}
+
+.tab-link {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #10e0e6;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.tab-link:hover,
+.tab-link.current {
+    background-color: #48d1cc;
+    transform: scale(1.05);
+}
+
+main {
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #555555;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+body {
+    font-family: 'Comic', sans MS;
+    margin: 0;
+    padding: 0;
+    background-color: #27C6A4; /* Dark grey background */
+    color: #ddd; /* White text color */
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #222;
+    padding: 2em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #444; /* Slightly lighter dark grey */
+    color: #fff;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.tabs li {
+    margin: 0 1em;
+    cursor: pointer;
+    padding: 1em;
+    background-color: #6a11cb;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.tabs li.current {
+    background-color: #2575fc;
+}
+
+.tabs li:hover {
+    background-color: #4e88ff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.current {
+    display: block;
+}
+
+main {
+    padding: 2em 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    border-bottom: 2px solid #6a11cb;
+    padding-bottom: 0.5em;
+    color: #fff; /* Ensure section headers are visible */
+}
+
+.job {
+    background-color: #444; /* Dark grey for job section */
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #2575fc;
+}
+
+.job h3 {
+    margin: 0;
+    color: #fff; /* Ensure job titles are visible */
+}
+
+.job p {
+    margin: 0.5em 0;
+    font-weight: bold;
+    color: #ccc; /* Slightly lighter text for job details */
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+    color: #ccc; /* Slightly lighter text for list items */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+
