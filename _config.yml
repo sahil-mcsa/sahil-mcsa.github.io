@@ -14,10 +14,4 @@ kramdown:
 # Build settings
 plugins:
   - jekyll-feed
-remote_theme: "mmistakes/minimal-mistakes"
-title: Sahil Sharma
-name: Sahil Sharma
-description: Ultrasound Researcher
-
-layout: single 
 
