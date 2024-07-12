@@ -3,7 +3,7 @@ email: sahil.sharma@inserm.fr
 description: >- # this means to ignore newlines until "baseurl:"
   Personal website for Sahil Sharma,
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sahil-mcsa.github.io" # the base hostname & protocol for your site
+url: "https://sahil.sharma.com" # the base hostname & protocol for your site
 theme: minima
 
 markdown: kramdown
@@ -14,5 +14,10 @@ kramdown:
 # Build settings
 plugins:
   - jekyll-feed
-  
+remote_theme: "mmistakes/minimal-mistakes"
+title: Sahil Sharma
+name: Sahil Sharma
+description: Ultrasound Researcher
+
+layout: single 
 
