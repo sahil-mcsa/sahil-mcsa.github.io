@@ -1,16 +1,4 @@
 <html lang="en"> 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background Image Example</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="background-image">
-        <h1>Welcome to My GitHub Page</h1>
-        <p>This is a sample text with a background image.</p>
-    </div>
-</body>    
 <header>
     
     <a href="https://www.neurotech-lab.fr/people" target="_blank"> Neurotech-lab</a>
@@ -19,6 +7,7 @@
     <a href="https://orcid.org/0000-0001-7566-9962" target="_blank">ORCID</a>
     
 </header>
+<body>    
 <nav>
     <ul class="tabs">
        
@@ -38,9 +27,6 @@
 <main>
     
     <div id="About" class="tab-content current">
-        <source media="(min-width: 650px)" srcset="soA_2.tif">
-        <source media="(min-width: 465px)" srcset="soA_2.tif">
-        <img src="assets/img/soA_2.tif" alt="Description of your image">
         <h2>Biography</h2>
             <p> I am working on "Wireless UltraSound Powered Diamond based Neural Stimulators.(SonoNeuroS)</p>                     
             <p>    </p>     
@@ -204,7 +190,7 @@
         <h2>Data</h2>
         <p>Available upon request.</p>
     </div>
-    
+</body>    
   <footer>
         <p>&copy; 2024 Sahil Sharma. All rights reserved.</p>
   </footer>
@@ -321,17 +307,22 @@
         display: block;
         margin: 0 auto;
     }
+    /* styles.css */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
     .background-image {
-    height: 100vh;
-    background-image: url('assets/img/soA_2.tif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+        height: 100vh; /* Full viewport height */
+        background-image: url('images/your-image.jpg');
+        background-size: cover; /* Cover the entire div */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent image from repeating */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
     }
 </style>
 
