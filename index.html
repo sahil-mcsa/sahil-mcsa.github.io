@@ -197,28 +197,45 @@
 </main>
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const tabLinks = document.querySelectorAll('.tab-link');
-        const tabContents = document.querySelectorAll('.tab-content');
-        
-        tabLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                const target = link.dataset.tab;
-                
-                tabLinks.forEach(l => l.classList.remove('current'));
-                link.classList.add('current');
-                
-                tabContents.forEach(content => {
-                    content.classList.remove('current');
-                    if (content.id === target) {
-                        content.classList.add('current');
-                    }
-                });
-            });
-        });
-    });
+<!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script type="text/javascript">
+	function download(url)
+	{
+		//url = 'https://raw.githubusercontent.com/hbai2022/hbai2022.github.io/main/README.md'
+		const xhr = new XMLHttpRequest();
+		xhr.open('GET', url)
+		xhr.responseType = 'blob'
+		xhr.send()
+		xhr.onload = function(){
+			const fileBlob = xhr.response;
+			// 将blob转成url地址
+			const fileUrl = URL.createObjectURL(fileBlob)
+			console.log(fileUrl)
+
+			const elementA = document.createElement('a')
+			elementA.setAttribute('href', fileUrl)
+			elementA.innerHTML = '下载'
+			elementA.setAttribute('download', '')
+			elementA.click()
+			//document.body.appendChild(elementA)
+		}
+	}
+	// let imgUrl = 'https://raw.githubusercontent.com/hbai2022/hbai2022.github.io/main/README.md'
+	// download(imgUrl)
+	// document.querySelector("button.button1").onclick = function(){
+	// 	download('https://github.com/hbai2022/hbai2022.github.io/raw/main/FormattingGuidelines-IJCAI-ECAI-22.zip')
+	// }
+	// document.querySelector("button.button2").onclick = function(){
+	// 	download('https://raw.githubusercontent.com/hbai2022/hbai2022.github.io/main/index.html')
+	// }
 </script>
+<script language="javascript" type="text/javascript" src="js/footer.js"></script>
+    
 <style>
     body {
         font-family: calibri, sans- MS;
@@ -309,5 +326,5 @@
         margin: 0 auto;
     }
 </style>
-
+<html>
 
