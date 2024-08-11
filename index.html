@@ -1,6 +1,7 @@
 <html lang="en"> 
 <header>
-    <img src="assets/img/IMG_8371.ico" alt="Icon" class="circle-icon">
+     <div class="icon-container"> 
+        <img src="assets/img/IMG_8371.ico" alt="Icon" class="circle-icon"> </div>
     <a href="https://www.neurotech-lab.fr/people" target="_blank"> Neurotech-lab</a>
     <a href="https://www.linkedin.com/in/sahil-sharma201/" target="_blank"> LinkedIn</a>
     <a href="https://www.researchgate.net/profile/Sahil-Sharma-25" target="_blank"> ResearchGate</a>
@@ -242,7 +243,17 @@
         border-bottom: 2px solid #555555;
         
     }
-      
+    .icon-container {
+    display: inline-block;
+    }
+
+    .circle-icon {
+    width: 100px; /* Set the desired size */
+    height: 100px; /* Set the desired size */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border: 2px solid #ddd; /* Optional: Add a border */
+    }  
     nav {
         margin-bottom: 20px;
     }
